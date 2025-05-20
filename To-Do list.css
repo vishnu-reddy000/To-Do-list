@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins',fantasy;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg,#c48f8f,#dc5252);
+    padding: 10px;
+}
+.todo-list{
+    width:100%;
+    max-width: 540px;
+    background: #edcbcb;
+    margin: 100px auto 20px;
+    padding: 40px  30px 70px;
+    border-radius: 10px;
+}
+.todo-list h2{
+    color: #0852c9;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-bottom:20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 900;
+    padding: 4px;
+    font-size: 18px;
+}
+button{
+    border: none;
+    font-weight: 600;
+    outline: none;
+    padding: 8px 15px;
+    background: #ff5999;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border:40px;
+}
+
+
+/* For tablets (widths between 768px and 1024px) */
+@media (max-width: 768px) and (min-width: 481px) {
+    .todo-list {
+        max-width: 460px;
+        padding: 30px 20px 60px;
+    }
+    .todo-list h2 {
+        font-size: 32px;
+    }
+    .row {
+        border-radius: 25px;
+        margin-bottom: 20px;
+        padding-left: 15px;
+    }
+    input {
+        font-size: 16px;
+    }
+    button {
+        padding: 7px 12px;
+        font-size: 14px;
+    }
+}
+
+/* For phones (widths below 768px) */
+@media (max-width: 480px) {
+    .todo-list {
+        max-width: 90%;
+        padding: 20px 15px 50px;
+    }
+    .todo-list h2 {
+        font-size: 28px;
+    }
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+        border-radius: 20px;
+        padding-left: 10px;
+    }
+    input {
+        font-size: 14px;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+    button {
+        padding: 16px 10px;
+        font-size: 12px;
+        align-self: flex-end;
+    }
+}
+
